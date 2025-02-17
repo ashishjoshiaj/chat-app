@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container" id="loginContainer">
+        <h2>Welcome to Chat App</h2>
+        <input type="text" id="username" placeholder="Enter your username">
+        <input type="text" id="room" placeholder="Enter room name">
+        <button onclick="joinRoom()">Join Room</button>
+    </div>
+
+    <div class="chat-container" id="chatContainer" style="display: none;">
+        <div class="sidebar">
+            <h3>Room: <span id="currentRoom"></span></h3>
+            <h4>Users Online:</h4>
+            <ul id="usersList"></ul>
+        </div>
+        
+        <div class="chat-main">
+            <div class="messages" id="messages"></div>
+            
+            <div class="emoji-picker" id="emojiPicker">
+                <div class="emoji-grid">
+                    <!-- Add more emojis as needed -->
+                    <button onclick="insertEmoji('😀')">😀</button>
+                    <button onclick="insertEmoji('😊')">😊</button>
+                    <button onclick="insertEmoji('❤️')">❤️</button>
+                    <button onclick="insertEmoji('👍')">👍</button>
+                    <button onclick="insertEmoji('🎉')">🎉</button>
+                    <button onclick="insertEmoji('😂')">😂</button>
+                </div>
+            </div>
+            
+            <div class="input-area">
+                <button onclick="toggleEmojiPicker()">😀</button>
+                <input type="text" id="messageInput" placeholder="Type your message">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

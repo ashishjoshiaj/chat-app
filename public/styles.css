@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.login-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    width: 200px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-container {
+    display: flex;
+    width: 800px;
+    height: 600px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar {
+    width: 200px;
+    padding: 1rem;
+    border-right: 1px solid #ddd;
+}
+
+.chat-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 1rem;
+}
+
+.input-area {
+    display: flex;
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+#messageInput {
+    flex: 1;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+}
+
+.emoji-picker {
+    display: none;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.emoji-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5rem;
+}
+
+.emoji-grid button {
+    font-size: 1.5rem;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
