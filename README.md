@@ -1,6 +1,8 @@
 # Chat App
 
+
 ## Description
+**THIS IS UNDER DEVELOPMENT PROJECT**
 This is a real-time chat application that allows users to join different chat rooms and communicate with others. The app is built using **Node.js**, **Express.js**, **Socket.io**, and **HTML/CSS/JavaScript** for the frontend.
 
 ## Features
