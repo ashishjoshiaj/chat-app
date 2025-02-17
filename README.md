@@ -78,7 +78,3 @@ chat-app/
 - User authentication with login/logout.
 - Persistent chat history using a database.
 - More advanced emoji and media sharing features.
-
-## License
-This project is licensed under the **ISC License**.
-
